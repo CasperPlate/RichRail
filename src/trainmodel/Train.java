@@ -11,6 +11,14 @@ public class Train {
 		this.name = name;
 	}
 	
+	public double getTotalLength() {
+		double totalLength = 0;
+		for (RollingComponent component : components) {
+			totalLength += component.getLength();
+		}
+		return totalLength;
+	}
+	
 	public void addComponent(RollingComponent component) {
 		components.add(component);
 	}
