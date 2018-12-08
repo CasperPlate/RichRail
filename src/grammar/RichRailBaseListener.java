@@ -1,4 +1,5 @@
 // Generated from RichRail.g4 by ANTLR 4.7.1
+
 package grammar;
 
 import org.antlr.v4.runtime.ParserRuleContext;
@@ -119,6 +120,18 @@ public class RichRailBaseListener implements RichRailListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitType(RichRailParser.TypeContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterType2(RichRailParser.Type2Context ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitType2(RichRailParser.Type2Context ctx) { }
 
 	/**
 	 * {@inheritDoc}
