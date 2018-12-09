@@ -13,7 +13,7 @@ public class RichRailClient {
 		// create a CharStream that reads from standard input
         // CharStream input = CharStreams.fromStream(System.in);
     	
-        CharStream is = CharStreams.fromString("delete train ns");
+        CharStream is = CharStreams.fromString("new wagon ns");
         
         RichRailLexer lexer = new RichRailLexer(is);
 
