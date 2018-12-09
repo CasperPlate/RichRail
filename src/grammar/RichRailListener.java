@@ -99,14 +99,4 @@ public interface RichRailListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitType(RichRailParser.TypeContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link RichRailParser#type2}.
-	 * @param ctx the parse tree
-	 */
-	void enterType2(RichRailParser.Type2Context ctx);
-	/**
-	 * Exit a parse tree produced by {@link RichRailParser#type2}.
-	 * @param ctx the parse tree
-	 */
-	void exitType2(RichRailParser.Type2Context ctx);
 }

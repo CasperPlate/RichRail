@@ -120,18 +120,6 @@ public class RichRailBaseListener implements RichRailListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitType(RichRailParser.TypeContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void enterType2(RichRailParser.Type2Context ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitType2(RichRailParser.Type2Context ctx) { }
 
 	/**
 	 * {@inheritDoc}
