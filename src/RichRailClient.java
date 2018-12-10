@@ -9,11 +9,13 @@ import grammar.*;
 public class RichRailClient {
 
 	public static void main(String[] args) throws Exception {
-		
-		// create a CharStream that reads from standard input
-        // CharStream input = CharStreams.fromStream(System.in);
-    	
-        CharStream is = CharStreams.fromString("new wagon ns");
+		command("new train ns");
+		command("create wagon locomotive intercity");
+		command("delete train ns");
+    }
+	
+	public static void command(String string) {
+		CharStream is = CharStreams.fromString(string);
         
         RichRailLexer lexer = new RichRailLexer(is);
 
@@ -29,6 +31,6 @@ public class RichRailClient {
         RichRailCommand listener = new RichRailCommand();
 
         walker.walk(listener, commandContext);
-    }
+	}
 
 }

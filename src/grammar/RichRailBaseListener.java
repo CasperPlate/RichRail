@@ -41,25 +41,13 @@ public class RichRailBaseListener implements RichRailListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterNewtraincommand(RichRailParser.NewtraincommandContext ctx) { }
+	@Override public void enterCrecommand(RichRailParser.CrecommandContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitNewtraincommand(RichRailParser.NewtraincommandContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void enterNewwagoncommand(RichRailParser.NewwagoncommandContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitNewwagoncommand(RichRailParser.NewwagoncommandContext ctx) { }
+	@Override public void exitCrecommand(RichRailParser.CrecommandContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *

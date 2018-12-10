@@ -30,25 +30,15 @@ public interface RichRailListener extends ParseTreeListener {
 	 */
 	void exitNewcommand(RichRailParser.NewcommandContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link RichRailParser#newtraincommand}.
+	 * Enter a parse tree produced by {@link RichRailParser#crecommand}.
 	 * @param ctx the parse tree
 	 */
-	void enterNewtraincommand(RichRailParser.NewtraincommandContext ctx);
+	void enterCrecommand(RichRailParser.CrecommandContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link RichRailParser#newtraincommand}.
+	 * Exit a parse tree produced by {@link RichRailParser#crecommand}.
 	 * @param ctx the parse tree
 	 */
-	void exitNewtraincommand(RichRailParser.NewtraincommandContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link RichRailParser#newwagoncommand}.
-	 * @param ctx the parse tree
-	 */
-	void enterNewwagoncommand(RichRailParser.NewwagoncommandContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link RichRailParser#newwagoncommand}.
-	 * @param ctx the parse tree
-	 */
-	void exitNewwagoncommand(RichRailParser.NewwagoncommandContext ctx);
+	void exitCrecommand(RichRailParser.CrecommandContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link RichRailParser#addcommand}.
 	 * @param ctx the parse tree
