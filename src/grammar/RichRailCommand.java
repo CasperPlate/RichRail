@@ -12,7 +12,7 @@ public class RichRailCommand extends RichRailBaseListener {
 	}
 	
 	@Override public void enterCrecommand(RichRailParser.CrecommandContext ctx) {
-		System.out.println("Now creating new wagon " + ctx.ID());
+		System.out.println("Now creating new wagon " + ctx.ID(0) + " " + ctx.ID(1));
 	}
 	
 	@Override public void enterAddcommand(RichRailParser.AddcommandContext ctx) {
