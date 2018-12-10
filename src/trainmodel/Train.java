@@ -19,8 +19,20 @@ public class Train {
 		return totalLength;
 	}
 	
+	public int getNumSeats() {
+		int totalSeats = 0;
+		for (RollingComponent component : components) {
+			totalSeats += component.getSeats();
+		}
+		return totalSeats;
+	}
+	
 	public void addComponent(RollingComponent component) {
 		components.add(component);
+	}
+	
+	public void remComponent(RollingComponent component) {
+		components.remove(component);
 	}
 	
 	public void setName(String name) {
