@@ -7,6 +7,8 @@ public class Train {
 	private List<RollingComponent> components = new ArrayList<RollingComponent>();
 	private String name;
 	
+	public Train() {};
+	
 	public Train(String name) {
 		this.name = name;
 	}
@@ -57,5 +59,9 @@ public class Train {
 		}
 		
 		return equalObjects;
+	}
+
+	public String toString() {
+		return name + " has the following components: \n  " + components;
 	}
 }
