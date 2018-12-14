@@ -19,6 +19,8 @@ public class RichRailClient {
 		command("add intercity to ns");
 		command("add eersteklas to ns");
 		System.out.println(yard.getTrainByName("ns"));
+		command("remove eersteklas from ns");
+		System.out.println(yard.getTrainByName("ns"));
     }
 	
 	public static void command(String string) {

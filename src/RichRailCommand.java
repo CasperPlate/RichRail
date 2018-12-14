@@ -35,10 +35,14 @@ public class RichRailCommand extends RichRailBaseListener {
 	
 	@Override public void enterDelcommand(RichRailParser.DelcommandContext ctx) {
 		System.out.println("Now deleting train " + ctx.ID());
+		RichRailClient.removeTrain(RichRailClient.getTrainByName(String.valueOf(ctx.ID())));
 	}
 	
 	@Override public void enterRemcommand(RichRailParser.RemcommandContext ctx) {
 		System.out.println("Now removing wagon " + ctx.ID(0) + " from train " + ctx.ID(1));
+		RollingComponent component = RichRailClient.getComponentByName(String.valueOf(ctx.ID(0)));
+		Train train = RichRailClient.getTrainByName(String.valueOf(ctx.ID(1)));
+		train.remComponent(component);
 	}
 
 }

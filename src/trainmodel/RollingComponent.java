@@ -57,9 +57,7 @@ public abstract class RollingComponent {
 		if (otherObject instanceof RollingComponent) {
 			RollingComponent otherRollingComponent = (RollingComponent) otherObject;
 			
-			if (this.company.equals(otherRollingComponent.company) &&
-				this.length == otherRollingComponent.length &&
-				this.seats == otherRollingComponent.seats) {
+			if (this.name.equals(otherRollingComponent.getName())) {
 				equalObjects = true;
 			}
 		}
