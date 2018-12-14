@@ -1,14 +1,23 @@
 package trainmodel;
 
 public abstract class RollingComponent {
-	private String company;
-	private double length;
-	private int seats;
+	protected String name;
+	protected String company;
+	protected double length;
+	protected int seats;
 	
 	public RollingComponent() { }
 	
 	public RollingComponent(int seats) {
 		this.seats = seats;
+	}
+	
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
 	}
 	
 	public void setCompany(String company) {
@@ -36,10 +45,10 @@ public abstract class RollingComponent {
 	}
 	
 	public String toString() {
-		if (company == null & seats == 0 & length == 0) {
+		if (company == null & seats == 0 & length == 0 && name == null) {
 			return "No information disclosable about this component";
 		}
-		return "component belongs to " + company + ", has " + seats + " and is " + length + " meters long";
+		return name;
 	}
 	
 	public boolean equals(Object otherObject) {
@@ -57,4 +66,5 @@ public abstract class RollingComponent {
 		
 		return equalObjects;
 	}
+
 }
