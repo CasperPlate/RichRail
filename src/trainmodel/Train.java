@@ -2,8 +2,9 @@ package trainmodel;
 
 import java.util.ArrayList;
 import java.util.List;
+import observer.TrainObserver;
 
-public class Train {
+public class Train implements TrainObserver {
 	private List<RollingComponent> components = new ArrayList<RollingComponent>();
 	private String name;
 	
@@ -11,6 +12,11 @@ public class Train {
 	
 	public Train(String name) {
 		this.name = name;
+	}
+	
+	@Override
+	public void update(RollingComponent component) {
+		System.out.println("A component has been added to the train "+name+"\n\t"+component);
 	}
 	
 	public double getTotalLength() {
@@ -62,6 +68,6 @@ public class Train {
 	}
 
 	public String toString() {
-		return name + " has the following components: \n  " + components;
+		return name + " has the following components: \n \t " + components;
 	}
 }

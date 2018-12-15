@@ -62,6 +62,10 @@ public class RichRailClient {
 		yard.addComponent(component);
 	}
 	
+	public static void addComponentToTrain(RollingComponent component, Train train) {
+		yard.addComponentToTrain(component, train);
+	}
+	
 	public static List<RollingComponent> getComponents() {
 		return yard.getComponents();
 	}

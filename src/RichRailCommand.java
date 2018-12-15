@@ -26,7 +26,7 @@ public class RichRailCommand extends RichRailBaseListener {
 		System.out.println("Now adding wagon " + ctx.ID(0) + " to train " + ctx.ID(1));
 		RollingComponent component = RichRailClient.getComponentByName(String.valueOf(ctx.ID(0)));
 		Train train = RichRailClient.getTrainByName(String.valueOf(ctx.ID(1)));
-		train.addComponent(component);
+		RichRailClient.addComponentToTrain(component, train);
 	}
 	
 	@Override public void enterGetcommand(RichRailParser.GetcommandContext ctx) {
