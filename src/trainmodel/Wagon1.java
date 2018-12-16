@@ -9,6 +9,7 @@ public class Wagon1 extends RollingComponent {
 		this.name = name;
 	}
 	
+	@Override
 	public String getAfbeelding() {
 		return afbeelding;
 	}

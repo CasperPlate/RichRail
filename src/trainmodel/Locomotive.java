@@ -9,6 +9,7 @@ public class Locomotive extends RollingComponent {
 		this.name = name;
 	}
 	
+	@Override
 	public String getAfbeelding() {
 		return afbeelding;
 	}

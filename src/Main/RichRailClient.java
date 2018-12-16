@@ -1,3 +1,4 @@
+package Main;
 import java.util.List;
 
 import org.antlr.v4.runtime.CharStream;
@@ -6,6 +7,7 @@ import org.antlr.v4.runtime.CommonTokenStream;
 import org.antlr.v4.runtime.ParserRuleContext;
 import org.antlr.v4.runtime.tree.ParseTreeWalker;
 
+import ui.*;
 import grammar.*;
 import trainmodel.*;
 
@@ -18,9 +20,19 @@ public class RichRailClient {
 		command("create wagon wagon1 eersteklas");
 		command("add intercity to ns");
 		command("add eersteklas to ns");
-		System.out.println(yard.getTrainByName("ns"));
-		command("remove eersteklas from ns");
-		System.out.println(yard.getTrainByName("ns"));
+
+		command("new train ariva");
+		command("create wagon locomotive intershity");
+		command("create wagon wagon1 klas1");
+		command("create wagon wagon2 klas2");
+		command("add intershity to ariva");
+		command("add klas1 to ariva");
+		command("add klas2 to ariva");
+		Window window = new Window("RichRail");
+		window.setVisible(true);
+//		System.out.println(yard.getTrainByName("ns"));
+//		command("remove eersteklas from ns");
+//		System.out.println(yard.getTrainByName("ns"));
     }
 	
 	public static void command(String string) {

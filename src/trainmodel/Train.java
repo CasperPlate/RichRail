@@ -51,6 +51,10 @@ public class Train implements TrainObserver {
 		return name;
 	}
 	
+	public List<RollingComponent> getComponents() {
+		return components;
+	}
+	
 	public boolean equals(Object otherObject) {
 		boolean equalObjects = false;
 		

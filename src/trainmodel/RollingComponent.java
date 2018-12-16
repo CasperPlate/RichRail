@@ -1,6 +1,7 @@
 package trainmodel;
 
 public abstract class RollingComponent {
+	protected String afbeelding;
 	protected String name;
 	protected String company;
 	protected double length;
@@ -10,6 +11,10 @@ public abstract class RollingComponent {
 	
 	public RollingComponent(int seats) {
 		this.seats = seats;
+	}
+	
+	public String getAfbeelding() {
+		return afbeelding;
 	}
 	
 	public String getName() {
