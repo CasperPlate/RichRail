@@ -2,6 +2,8 @@ package trainmodel;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import Main.RichRailClient;
 import observer.TrainObserver;
 
 public class Train implements TrainObserver {
@@ -16,7 +18,7 @@ public class Train implements TrainObserver {
 	
 	@Override
 	public void update(RollingComponent component) {
-		System.out.println("A component has been added to the train "+name+"\n\t"+component);
+		RichRailClient.refresh();
 	}
 	
 	public double getTotalLength() {
@@ -41,6 +43,7 @@ public class Train implements TrainObserver {
 	
 	public void remComponent(RollingComponent component) {
 		components.remove(component);
+		update(component);
 	}
 	
 	public void setName(String name) {

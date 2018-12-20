@@ -2,6 +2,8 @@ package trainmodel;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import Main.RichRailClient;
 import observer.Subject;
 import observer.TrainYardObserver;
 
@@ -15,7 +17,7 @@ public class TrainYard extends Subject implements TrainYardObserver {
 	
 	@Override
 	public void update(Train train) {
-		System.out.println("A train has been added \n\t"+train.getName());
+		RichRailClient.refresh();
 	}
 	
 	public List<Train> getTrains() {
@@ -52,6 +54,7 @@ public class TrainYard extends Subject implements TrainYardObserver {
 	
 	public void deleteTrain(Train train) {
 		trains.remove(train);
+		update(train);
 	}
 	
 	public void addComponent(RollingComponent component) {
