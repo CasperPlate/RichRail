@@ -51,8 +51,13 @@ public class RichRailClient {
 
 		
 		Window window1 = new Window("RichRail-1");
+		Window window2 = new Window("RichRail-2");
+		yard.addObserver(window1);
+		yard.addObserver(window2);
 		window1.setVisible(true);
+		window2.setVisible(true);
 		windows.add(window1);
+		windows.add(window2);
 
 //		Window window2 = new Window("RichRail-2");
 //		window2.setVisible(true);

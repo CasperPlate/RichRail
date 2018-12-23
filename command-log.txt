@@ -21,3 +21,56 @@
 [2018/12/20-20:20:11][RichRail-1]add tweedeklas to ns
 [2018/12/20-20:20:37][RichRail-1]Saved to file "trains.csv"
 [2018/12/20-20:20:51][RichRail-1]Closing window
+[2018/12/23-19:18:54][RichRail-1]Started Window
+[2018/12/23-19:19:05][RichRail-1]new train ns
+[2018/12/23-19:19:24][RichRail-1]create locomotive intercity
+[2018/12/23-19:19:33][RichRail-1]add intercity to ns
+[2018/12/23-19:19:42][RichRail-1]add intercity to ns
+[2018/12/23-19:19:49][RichRail-1]remove intercity from ns
+[2018/12/23-19:19:50][RichRail-1]remove intercity from ns
+[2018/12/23-19:19:58][RichRail-1]add intercity to ns
+[2018/12/23-19:20:15][RichRail-1]create wagon eersteklas
+[2018/12/23-19:20:54][RichRail-1]create wagon wagon1 eersteklas
+[2018/12/23-19:21:26][RichRail-1]create wagon1 eersteklas
+[2018/12/23-19:22:22][RichRail-1]delete train ns
+[2018/12/23-19:22:30][RichRail-1]new train ns
+[2018/12/23-19:22:46][RichRail-1]create wagon locomotive intercity
+[2018/12/23-19:22:57][RichRail-1]add intercity to ns
+[2018/12/23-19:23:10][RichRail-1]remove intercity from ns
+[2018/12/23-19:23:28][RichRail-1]create wagon wagon2 tweedeklas
+[2018/12/23-19:23:34][RichRail-1]
+[2018/12/23-19:24:03][RichRail-1]help
+[2018/12/23-19:24:41][RichRail-1]new train arriva
+[2018/12/23-19:24:50][RichRail-1]add intercity to arriva
+[2018/12/23-19:25:20][RichRail-1]Closing window
+[2018/12/23-19:25:44][RichRail-1]Started Window
+[2018/12/23-19:25:55][RichRail-1]Closing window
+[2018/12/23-19:59:20][RichRail-1]Started Window
+[2018/12/23-19:59:27][RichRail-1]Closing window
+[2018/12/23-20:14:28][RichRail-1]Started Window
+[2018/12/23-20:14:38][RichRail-1]new train ns
+[2018/12/23-20:14:49][RichRail-1]create wagon locomotive intercity
+[2018/12/23-20:14:58][RichRail-1]add intercity to ns
+[2018/12/23-20:15:02][RichRail-1]Closing window
+[2018/12/23-20:15:42][RichRail-1]Started Window
+[2018/12/23-20:15:48][RichRail-1]new train ns
+[2018/12/23-20:15:59][RichRail-1]create wagon locomotive intercity
+[2018/12/23-20:16:04][RichRail-1]add intercity to ns
+[2018/12/23-20:16:44][RichRail-1]Started Window
+[2018/12/23-20:16:54][RichRail-1]Started Window
+[2018/12/23-20:17:02][RichRail-1]new train ns
+[2018/12/23-20:17:28][RichRail-1]create wagon locomotive intercit
+[2018/12/23-20:17:35][RichRail-1]add intercit to ns
+[2018/12/23-20:17:44][RichRail-1]Started Window
+[2018/12/23-20:17:51][RichRail-1]new train ns
+[2018/12/23-20:18:02][RichRail-1]create wagon locomotive intercity
+[2018/12/23-20:18:08][RichRail-1]add intercity to ns
+[2018/12/23-20:18:37][RichRail-1]Started Window
+[2018/12/23-20:19:38][RichRail-1]Started Window
+[2018/12/23-20:19:40][RichRail-2]Started Window
+[2018/12/23-20:19:50][RichRail-1]new train ns
+[2018/12/23-20:20:03][RichRail-1]create wagon locomotive intercity
+[2018/12/23-20:20:18][RichRail-1]add intercity to ns
+[2018/12/23-20:20:23][RichRail-1]Closing window
+[2018/12/23-20:20:25][RichRail-2]Closing window
+[2018/12/23-20:21:05][RichRail-1]Closing window

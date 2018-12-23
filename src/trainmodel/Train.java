@@ -6,7 +6,7 @@ import java.util.List;
 import Main.RichRailClient;
 import observer.TrainObserver;
 
-public class Train implements TrainObserver {
+public class Train {
 	private List<RollingComponent> components = new ArrayList<RollingComponent>();
 	private String name;
 	
@@ -14,11 +14,6 @@ public class Train implements TrainObserver {
 	
 	public Train(String name) {
 		this.name = name;
-	}
-	
-	@Override
-	public void update(RollingComponent component) {
-		RichRailClient.refresh();
 	}
 	
 	public double getTotalLength() {
@@ -43,7 +38,6 @@ public class Train implements TrainObserver {
 	
 	public void remComponent(RollingComponent component) {
 		components.remove(component);
-		update(component);
 	}
 	
 	public void setName(String name) {

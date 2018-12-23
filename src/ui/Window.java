@@ -47,11 +47,12 @@ import javax.swing.text.StyledDocument;
 
 import Main.CommandInfoHolder;
 import Main.RichRailClient;
+import observer.TrainObserver;
 import trainmodel.RollingComponent;
 import trainmodel.Train;
 import utils.CSVUtils;
 
-public class Window extends JFrame {
+public class Window extends JFrame implements TrainObserver {
 	private static final long serialVersionUID = 1L;
 	private DisplayJPanelFactory display;
 	private JPanel masterPanel = new JPanel();
@@ -374,7 +375,7 @@ public class Window extends JFrame {
 				+ "delete <trainName>\r\n" 
 				+ "\tto delete a train\r\n" 
 				+ "remove <componentName> from <trainName>\r\n"
-				+ "\tto remove a component from a train\r\n" + fancyFy;
+				+ "\to remove a component from a train\r\n" + fancyFy;
 		 appendConsolePane(helpText, Color.CYAN);
 	}
 

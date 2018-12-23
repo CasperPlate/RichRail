@@ -3,21 +3,13 @@ package trainmodel;
 import java.util.ArrayList;
 import java.util.List;
 
-import Main.RichRailClient;
 import observer.Subject;
-import observer.TrainYardObserver;
 
-public class TrainYard extends Subject implements TrainYardObserver {
+public class TrainYard extends Subject {
 	List<Train> trains = new ArrayList<Train>();
 	List<RollingComponent> components = new ArrayList<RollingComponent>();
 	
 	public TrainYard() {
-		addObserver(this);
-	}
-	
-	@Override
-	public void update(Train train) {
-		RichRailClient.refresh();
 	}
 	
 	public List<Train> getTrains() {
@@ -48,13 +40,12 @@ public class TrainYard extends Subject implements TrainYardObserver {
 
 	public void addTrain(Train train) {
 		trains.add(train);
-		notifyObservers(train);
-		addObserver(train);
+		notifyObservers();
 	}
 	
 	public void deleteTrain(Train train) {
 		trains.remove(train);
-		update(train);
+		notifyObservers();
 	}
 	
 	public void addComponent(RollingComponent component) {
@@ -67,7 +58,7 @@ public class TrainYard extends Subject implements TrainYardObserver {
 				for (Train realTrain : trains) {
 					if(train.equals(realTrain)) {
 						train.addComponent(realComponent);
-						notifyObservers(realComponent);
+						notifyObservers();
 					}
 				}
 			}
